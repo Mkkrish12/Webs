@@ -4,6 +4,7 @@ export interface Project {
   tags: string[];
   link?: string;
   github?: string;
+  demo?: string;
   featured?: boolean;
 }
 
@@ -16,4 +17,5 @@ export interface PostMeta {
   published: boolean;
   slug: string;
   readingTime?: string;
+  spotify?: string;
 }

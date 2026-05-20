@@ -3,8 +3,8 @@ import { siteConfig } from "@/lib/constants";
 export function SocialLinks() {
   const links = [
     { label: "GitHub", href: siteConfig.links.github },
-    { label: "X", href: siteConfig.links.twitter },
     { label: "LinkedIn", href: siteConfig.links.linkedin },
+    { label: "Spotify", href: siteConfig.links.spotify },
   ];
 
   return (

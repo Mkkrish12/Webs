@@ -29,6 +29,7 @@ function getPostsFromDir(dir: string, type: "blog" | "podcast"): PostMeta[] {
         published: data.published !== false,
         slug,
         readingTime: stats.text,
+        spotify: data.spotify,
       } as PostMeta;
     })
     .filter((post) => post.published);
@@ -73,6 +74,7 @@ export function getPostBySlug(slug: string) {
           published: data.published !== false,
           slug,
           readingTime: stats.text,
+          spotify: data.spotify,
         } as PostMeta,
         content,
       };

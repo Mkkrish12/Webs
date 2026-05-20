@@ -15,20 +15,20 @@ export function Footer() {
             GitHub
           </a>
           <a
-            href={siteConfig.links.twitter}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-zinc-300 transition-colors"
-          >
-            X
-          </a>
-          <a
             href={siteConfig.links.linkedin}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-zinc-300 transition-colors"
           >
             LinkedIn
+          </a>
+          <a
+            href={siteConfig.links.spotify}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-zinc-300 transition-colors"
+          >
+            Spotify
           </a>
         </div>
       </div>

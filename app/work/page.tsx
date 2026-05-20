@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import { getAllPosts } from "@/lib/mdx";
 import { PostCard } from "@/components/ui/PostCard";
+import { SpotifyEmbed } from "@/components/ui/SpotifyEmbed";
+import { siteConfig } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Work",
@@ -32,18 +34,19 @@ export default function WorkPage() {
         </section>
       )}
 
-      {podcastEpisodes.length > 0 && (
-        <section>
-          <h2 className="text-sm font-mono text-purple-400 uppercase tracking-wider mb-6">
-            Podcast
-          </h2>
-          <div className="space-y-4">
+      <section>
+        <h2 className="text-sm font-mono text-purple-400 uppercase tracking-wider mb-6">
+          Podcast
+        </h2>
+        <SpotifyEmbed url={siteConfig.links.spotify} />
+        {podcastEpisodes.length > 0 && (
+          <div className="space-y-4 mt-6">
             {podcastEpisodes.map((post) => (
               <PostCard key={post.slug} post={post} />
             ))}
           </div>
-        </section>
-      )}
+        )}
+      </section>
     </div>
   );
 }

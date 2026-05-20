@@ -5,10 +5,10 @@ export const siteConfig = {
     "Finance student building AI tools. Projects, writing, and podcasts.",
   url: "https://manikandan.vercel.app",
   links: {
-    github: "https://github.com/manikandan",
-    twitter: "https://x.com/manikandan",
-    linkedin: "https://linkedin.com/in/manikandan",
+    github: "https://github.com/Mkkrish12",
+    linkedin: "https://www.linkedin.com/in/manikandan-p-/",
     email: "manikandankrish12@gmail.com",
+    spotify: "https://open.spotify.com/show/4BJXIn0hC4uIsG38NxSiV1",
   },
 };
 

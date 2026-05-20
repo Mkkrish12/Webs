@@ -16,48 +16,53 @@ export default function AboutPage() {
 
       <div className="space-y-6 text-zinc-400 leading-relaxed">
         <p className="text-lg">
-          I&apos;m Manikandan — a finance student who{" "}
-          <GradientText>builds AI tools</GradientText>.
+          I&apos;m Manikandan — a{" "}
+          <GradientText>builder, hustler, and ambitious thinker</GradientText>.
         </p>
 
         <p>
-          I got into building because I kept running into problems that nobody
-          was solving. The first time I automated something tedious with code, I
-          was hooked. Now I spend my time at the intersection of finance and AI,
-          building tools that make workflows faster and smarter.
+          I solve problems by shipping. The fastest way to know if an idea
+          matters is to put it in front of people — so that&apos;s what I do.
+          Friction becomes a product, an idea becomes a working tool, and a
+          weekend becomes a hackathon win.
         </p>
 
         <p>
-          My current focus is on AI agents, browser automation, and tools that
-          reduce friction in everyday tasks. I believe the best software comes
-          from solving your own problems first.
+          My work sits at the intersection of finance and AI — agents that
+          compress repetitive workflows, dashboards that surface signal, and
+          tools that hand power back to the operator.
         </p>
 
         <h2 className="text-xl font-bold text-zinc-100 pt-6">What I&apos;m up to</h2>
         <ul className="list-disc list-inside space-y-2 text-zinc-400">
-          <li>Building AI-powered Chrome extensions</li>
-          <li>Exploring multi-agent systems</li>
-          <li>Writing about building in public</li>
-          <li>Studying finance (the day job)</li>
+          <li>Building tools</li>
+          <li>Working on my startup idea</li>
+          <li>Building at hackathons</li>
+          <li>
+            Scouting early-stage startups for LvlUp Ventures and GoAhead
+            Ventures
+          </li>
+          <li>Writing about investing in startups</li>
+          <li>Oh yeah — studying finance at Fordham University (the day job)</li>
         </ul>
 
         <h2 className="text-xl font-bold text-zinc-100 pt-6">Get in touch</h2>
         <p>
-          Reach out via{" "}
+          Reach out at{" "}
           <a
             href={`mailto:${siteConfig.links.email}`}
             className="text-purple-400 hover:text-purple-300 transition-colors"
           >
-            email
+            {siteConfig.links.email}
           </a>{" "}
           or find me on{" "}
           <a
-            href={siteConfig.links.twitter}
+            href={siteConfig.links.linkedin}
             target="_blank"
             rel="noopener noreferrer"
             className="text-purple-400 hover:text-purple-300 transition-colors"
           >
-            X
+            LinkedIn
           </a>
           .
         </p>

@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { getAllPosts, getPostBySlug } from "@/lib/mdx";
 import { Tag } from "@/components/ui/Tag";
+import { SpotifyEmbed } from "@/components/ui/SpotifyEmbed";
+import { siteConfig } from "@/lib/constants";
 
 interface Props {
   params: { slug: string };
@@ -50,6 +52,9 @@ export default function PostPage({ params }: Props) {
           ))}
         </div>
       </header>
+      {post.meta.type === "podcast" && (
+        <SpotifyEmbed url={post.meta.spotify || siteConfig.links.spotify} />
+      )}
       <article className="prose prose-invert prose-zinc prose-headings:font-bold prose-headings:tracking-tight prose-a:text-purple-400 prose-code:font-mono max-w-none">
         <MDXRemote source={post.content} />
       </article>
