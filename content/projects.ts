@@ -45,6 +45,14 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    title: "Nana & Neo",
+    description:
+      "Built at Eazo x Gen Hackathon. Two-sided matching app pairing older adults (Nanas) with younger people (Neos) for weekly conversations. Quiz-based compatibility scoring with AI-generated prompts and a streak-tracked weekly call experience.",
+    tags: ["Eazo", "Next.js", "Drizzle ORM", "AWS Bedrock", "Framer Motion"],
+    link: "https://nana-neo-02c53b7c.eazo.dev",
+    featured: false,
+  },
+  {
     title: "CredAgent",
     description:
       "Built at MuleRun. AI agent that automates healthcare staffing credentialing — chases candidates, verifies docs against government registers, and ships compliance packs on clearance. Cuts onboarding from 60 days to 14.",
