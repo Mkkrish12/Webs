@@ -45,6 +45,14 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    title: "CredAgent",
+    description:
+      "Built at MuleRun. AI agent that automates healthcare staffing credentialing — chases candidates, verifies docs against government registers, and ships compliance packs on clearance. Cuts onboarding from 60 days to 14.",
+    tags: ["MuleRun", "AI Agent", "Healthcare", "Compliance"],
+    link: "https://x2uvzcup.mule.page",
+    featured: false,
+  },
+  {
     title: "FormFiller",
     description:
       "AI-powered Chrome extension that auto-fills forms using your stored profile. Saves time across job applications, sign-ups, and repeated forms.",

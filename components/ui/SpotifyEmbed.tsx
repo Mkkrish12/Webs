@@ -18,7 +18,7 @@ export function SpotifyEmbed({ url }: SpotifyEmbedProps) {
   const height = embedUrl.includes("/show/") ? 352 : 232;
 
   return (
-    <div className="my-6 rounded-lg overflow-hidden border border-white/[0.08]">
+    <div className="my-6 rounded-lg overflow-hidden border border-zinc-200 dark:border-white/[0.08]">
       <iframe
         src={embedUrl}
         width="100%"

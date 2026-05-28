@@ -15,7 +15,7 @@ export function SocialLinks() {
           href={link.href}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-sm text-zinc-500 hover:text-zinc-200 transition-colors"
+          className="text-sm text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200 transition-colors"
         >
           {link.label}
         </a>

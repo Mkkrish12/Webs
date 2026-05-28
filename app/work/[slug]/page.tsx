@@ -32,20 +32,20 @@ export default function PostPage({ params }: Props) {
     <div className="max-w-3xl mx-auto px-6 py-20">
       <header className="mb-12">
         <div className="flex items-center gap-3 mb-4">
-          <span className="font-mono text-xs text-purple-400 uppercase">
+          <span className="font-mono text-xs text-purple-600 dark:text-purple-400 uppercase">
             {post.meta.type}
           </span>
-          <span className="text-xs text-zinc-600">{post.meta.date}</span>
+          <span className="text-xs text-zinc-500 dark:text-zinc-600">{post.meta.date}</span>
           {post.meta.readingTime && (
-            <span className="text-xs text-zinc-600">
+            <span className="text-xs text-zinc-500 dark:text-zinc-600">
               {post.meta.readingTime}
             </span>
           )}
         </div>
-        <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-zinc-100 mb-4">
+        <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-4">
           {post.meta.title}
         </h1>
-        <p className="text-zinc-400">{post.meta.description}</p>
+        <p className="text-zinc-600 dark:text-zinc-400">{post.meta.description}</p>
         <div className="flex flex-wrap gap-2 mt-4">
           {post.meta.tags.map((tag) => (
             <Tag key={tag}>{tag}</Tag>
@@ -55,7 +55,7 @@ export default function PostPage({ params }: Props) {
       {post.meta.type === "podcast" && (
         <SpotifyEmbed url={post.meta.spotify || siteConfig.links.spotify} />
       )}
-      <article className="prose prose-invert prose-zinc prose-headings:font-bold prose-headings:tracking-tight prose-a:text-purple-400 prose-code:font-mono max-w-none">
+      <article className="prose prose-zinc dark:prose-invert prose-headings:font-bold prose-headings:tracking-tight prose-a:text-purple-600 dark:prose-a:text-purple-400 prose-code:font-mono max-w-none">
         <MDXRemote source={post.content} />
       </article>
     </div>
