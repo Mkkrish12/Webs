@@ -67,4 +67,12 @@ export const projects: Project[] = [
     tags: ["Chrome Extension", "React", "OpenAI", "TypeScript", "WXT"],
     featured: false,
   },
+  {
+    title: "Which is Right?",
+    description:
+      "Space-themed spelling game for kids 8–11. Two versions of a word fall from the sky — tap the correct spelling. Streak bonuses, difficulty levels 1–10, and shareable challenge links via encoded URLs.",
+    tags: ["Vanilla JS", "HTML5", "CSS Animations", "Web Audio API"],
+    link: "https://3000-i4fgui2kpnxucqv0es5q9.e2b.app",
+    featured: false,
+  },
 ];
