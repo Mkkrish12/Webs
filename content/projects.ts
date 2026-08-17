@@ -7,7 +7,7 @@ export const projects: Project[] = [
       "Multi-agent AI system for insurance claim processing. Orchestrator, agents, frontend pipeline, and policy evaluation — built during hackathon.",
     tags: ["Python", "Multi-Agent AI", "Orchestrator"],
     github: "https://github.com/Mkkrish12/Corgi",
-    featured: true,
+    featured: false,
   },
   {
     title: "GoSolar",
@@ -58,6 +58,23 @@ export const projects: Project[] = [
       "Built at MuleRun. AI agent that automates healthcare staffing credentialing — chases candidates, verifies docs against government registers, and ships compliance packs on clearance. Cuts onboarding from 60 days to 14.",
     tags: ["MuleRun", "AI Agent", "Healthcare", "Compliance"],
     link: "https://x2uvzcup.mule.page",
+    featured: false,
+  },
+  {
+    title: "Warden",
+    description:
+      "Built at Rain x Monad hackathon. Autonomous AP agent for finance teams — ingests vendor invoices, enforces spend policy on-chain via Monad, and pays approved bills with Rain scoped virtual cards locked to one vendor and exact amount.",
+    tags: ["Rain", "Monad", "Solidity", "TypeScript", "Slack"],
+    github: "https://github.com/Mkkrish12/warden",
+    demo: "https://www.loom.com/share/20e00e1582bf4f43a5d7a9c4269f3186",
+    featured: true,
+  },
+  {
+    title: "Latch",
+    description:
+      "Built at Shopify hackathon. Agentic escrow checkout — describe what you want, the agent searches the live Shopify catalog, and checks out with a Rain card. Funds held in escrow until delivery or inspection confirmed.",
+    tags: ["Shopify", "Next.js", "TypeScript", "OpenAI", "Rain"],
+    demo: "https://www.loom.com/share/c2d7cba7222b49d7ba35dc0d33c93798",
     featured: false,
   },
   {
